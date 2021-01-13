@@ -1,0 +1,196 @@
+hr {
+    width: 1160px;
+    // margin-top: 78px;
+    margin-left: 0;
+    opacity: 0.1;
+    background-color:rgb(0, 0, 0); 
+    height:2px; 
+    
+}
+
+.page-main{
+    width: 1160px;
+    margin: 80px auto 0;
+}
+
+.offers {
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin-bottom: 78px;
+    &__sites, &__apps, &__present {
+        width: 300px;
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    &__header{
+        margin-top: 26px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-family: Roboto medium;
+        font-size: 24px;
+    }
+    &__text{
+        margin-top: 0;
+        margin-bottom: 34px;
+        line-height: 1.5;      
+    }
+    button {
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    outline-style: none;
+    border: none;
+    padding: 15px 45px;
+    }
+    .sites-button {
+        background-color: #fb565a;
+        &:hover {
+            background-color: #e74246;
+        }
+    }
+    .apps-button {
+        background-color: #00ca74;
+        &:hover {
+            background-color: #00bc6c;
+        }
+    }
+    .present-button {
+        background-color: #efc84a;
+        &:hover {
+            background-color: #eab534;
+        }
+    }
+}
+
+.studio {
+    display: flex;
+    justify-content: space-between; 
+    padding: 0;
+    margin-top: 65px;
+    margin-bottom: 60px;
+}
+
+.studio__advantages {
+    .advantages-header {
+        font-size: 45px;
+        line-height: 1.1;
+        font-family: inherit;
+        margin-top: 5px;
+        margin-bottom: 35px;
+    }
+    .advantages-text {
+        margin-top: -6px;
+        margin-bottom: 40px;
+        line-height: 1.5;
+    }
+    .list-header {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .advantages-list {
+        position: relative;
+        li {
+            margin-top: 27px; 
+        }
+        li:first-child::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 25px;
+            height: 3px;
+            background-color: #fb565a;
+        }
+        li:nth-child(2)::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 55px;
+            width: 25px;
+            height: 3px;
+            background-color: #fb565a;
+        }
+        li:last-child::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 100px;
+            width: 25px;
+            height: 3px;
+            background-color: #fb565a;
+        }
+       
+    }
+}
+
+.studio__info {
+    display: flex;
+    background-image: url(../img/nerds-illustration.jpg);
+    background-repeat: no-repeat;
+    background-position: 21px 11px;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -40px;
+    box-sizing: border-box;
+    width: 380px;
+    .info-text {
+        margin-top: 258px;
+        font-weight: bold;
+        text-transform: uppercase;
+        word-spacing: 3px;
+    }
+    .info-list {
+        display: flex;
+        list-style: none;
+        margin-right: -50px;
+        margin-left: 15px;
+        padding: 0;
+        .big-text {
+            width: 110px;
+            display: block;
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: -10px;
+        }
+    }
+}
+
+.logo-company{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    .logo1 {
+        opacity: 30%;
+        &:hover {
+            opacity: 100%;
+        }
+    }
+    .logo2 {
+        opacity: 30%;
+        &:hover {
+            opacity: 100%;
+        }
+    }
+    .logo3 {
+        opacity: 30%;
+        &:hover {
+            opacity: 100%;
+        }
+    }
+    .logo4 {
+        opacity: 30%;
+        &:hover {
+            opacity: 100%;
+        }
+    }
+}

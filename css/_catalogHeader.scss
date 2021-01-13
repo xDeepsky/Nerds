@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(../fonts/Roboto-Light.ttf);
+    src: url(../fonts/Roboto-Medium.ttf);
+    src: url(../fonts/Roboto-Bold.ttf);
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box; 
+    }
+    
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+    
+    .visually-hidden{
+        position: relative;
+        width: 0;
+        left: 10px;
+        margin: -1px;
+        height: 1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        display: none;
+    }
+    
+    .page-header {
+        height: 355px;
+        background-color: #eee;    
+    }
+    
+    .container{
+        width: 1160px;
+        padding-top: 50px;
+        margin: 0 auto;    
+    }
+    
+    .main-nav {
+        li::after {
+            content:"";
+            position: absolute;
+            top: 35px;
+            left: -5px;
+            transition: 0.2s;
+            display: inline-block;
+            width: 0;
+            height: 3px;
+            background-color: red;
+        }
+        li:hover::after {
+            width: 115%;
+        }
+        li {
+            position: relative;
+            margin-left: 48px;
+            text-transform: uppercase;
+            padding-top: 10px;  
+            & a:hover {
+                transition: 0.2s;
+                color: red;
+            }      
+        }
+        .bascet svg{
+            margin-right: 25px;
+            position: relative;
+            top: 1px;
+            }
+            &  path,circle {
+            fill: rgba($color: #000000, $alpha: 0.2);
+            }
+        &:hover circle, &:hover path{
+            fill: rgba($color: #000000, $alpha: 0.5);
+            }
+        margin-bottom: 6px;
+    }
+    
+    .nav-wraper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .site-navigation {
+        display: flex;
+        padding-left: 0;
+    }
+
+    .catalog__header {
+        font-size: 55px;
+        text-align: center;
+        margin-top: 65px;
+        margin-bottom: 100px;
+
+    }   
